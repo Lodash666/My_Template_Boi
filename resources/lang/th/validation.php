@@ -190,6 +190,7 @@ return [
             'old_password' => 'รหัสผ่านเดิม',
             'new_password' => 'รหัสผ่านใหม่',
             'new_password_confirmation' => 'ยืนยันรหัสผ่านใหม่',
+            'username'=>'ชื่อผู้ใช้',
         ],
     ],
 ];
