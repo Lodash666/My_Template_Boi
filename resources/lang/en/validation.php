@@ -203,6 +203,7 @@ return [
             'old_password' => 'Old Password',
             'timezone' => 'Timezone',
             'language' => 'Language',
+            'username'=>'Username',
         ],
     ],
 ];

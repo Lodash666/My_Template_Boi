@@ -17,7 +17,6 @@
                         <div class="col col-sm-4 order-1 order-sm-2  mb-4">
                             <div class="card mb-4 bg-light">
                                 <img class="card-img-top" src="{{ $logged_in_user->picture }}" alt="Profile Picture">
-
                                 <div class="card-body">
                                     <h4 class="card-title">
                                         {{ $logged_in_user->name }}<br/>

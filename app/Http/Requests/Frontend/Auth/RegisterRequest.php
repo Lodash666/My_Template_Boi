@@ -31,8 +31,10 @@ class RegisterRequest extends FormRequest
         return [
             'first_name' => ['required', 'string'],
             'last_name' => ['required', 'string'],
-            'email' => ['required', 'string', 'email', Rule::unique('users')],
-            'password' => PasswordRules::register($this->email),
+            'username' => ['required', 'string',Rule::unique('users','username')],
+            'email' => ['required', 'string', 'email'],
+//            'password' => PasswordRules::register($this->password),
+            'password'=>['required', 'string'],
             'g-recaptcha-response' => ['required_if:captcha_status,true', 'captcha'],
         ];
     }

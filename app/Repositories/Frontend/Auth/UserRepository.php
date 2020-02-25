@@ -93,9 +93,11 @@ class UserRepository extends BaseRepository
     public function create(array $data)
     {
         return DB::transaction(function () use ($data) {
+//            dd($data);
             $user = $this->model::create([
                 'first_name' => $data['first_name'],
                 'last_name' => $data['last_name'],
+                'username' =>$data['username'],
                 'email' => $data['email'],
                 'confirmation_code' => md5(uniqid(mt_rand(), true)),
                 'active' => true,
@@ -103,6 +105,7 @@ class UserRepository extends BaseRepository
                 // If users require approval or needs to confirm email
                 'confirmed' => ! (config('access.users.requires_approval') || config('access.users.confirm_email')),
             ]);
+//            dd($user);
 
             if ($user) {
                 // Add the default site role to the new user
