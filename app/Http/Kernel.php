@@ -59,6 +59,11 @@ class Kernel extends HttpKernel
             'password_expires',
             'permission:view project',
         ],
+        'worker' => [
+            'auth',
+            'password_expires',
+            'permission:view worker',
+        ],
     ];
 
     /**

@@ -48,6 +48,7 @@ return [
                     'sort' => 'Sort',
                     'total' => 'role total|roles total',
                 ],
+                'menu_manage'=>'Menu Management'
             ],
 
             'users' => [
@@ -110,6 +111,13 @@ return [
                 ],
 
                 'view' => 'View User',
+            ],
+            'menu'=>[
+                'management'=>'Menu Management',
+                'table'=>[
+                    'menu'=>'Menu',
+                    'code'=>'Menu Code',
+                ],
             ],
         ],
     ],

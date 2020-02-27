@@ -33,6 +33,7 @@
                     <i class="fab fa-facebook"></i>
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-pinterest"></i>
+                    {{$logged_in_user->roles}}
                 </div><!--card-body-->
             </div><!--card-->
         </div><!--col-->

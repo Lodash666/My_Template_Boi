@@ -4,6 +4,7 @@
             <li class="nav-title">
                 @lang('menus.backend.sidebar.general')
             </li>
+{{--            {{$logged_in_user->roles[0]->id}}--}}
             <li class="nav-item">
                 <a class="nav-link {{
                     active_class(Route::is('admin/dashboard'))
@@ -13,6 +14,7 @@
                 </a>
             </li>
 
+            @include('backend.includes.partials.menus')
             @if ($logged_in_user->isAdmin())
                 <li class="nav-title">
                     @lang('menus.backend.sidebar.system')
@@ -51,6 +53,11 @@
                                 @lang('labels.backend.access.roles.management')
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('admin.menu.index')  }}">
+                                @lang('labels.backend.access.roles.menu_manage')
+                            </a>
+                        </li>
                     </ul>
                 </li>
 
@@ -83,6 +90,7 @@
                     </ul>
                 </li>
             @endif
+
         </ul>
     </nav>
 

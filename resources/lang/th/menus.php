@@ -47,6 +47,7 @@ return [
             'general' => 'ทั่วไป',
             'history' => 'History',
             'system' => 'ระบบ',
+            'menu'=>'เมนู'
         ],
     ],
 
