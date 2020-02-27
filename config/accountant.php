@@ -4,42 +4,42 @@ declare(strict_types=1);
 
 return [
 
-    'ledger' => [
+    // 'ledger' => [
 
-        /*
-        |--------------------------------------------------------------------------
-        | Ledger Implementation
-        |--------------------------------------------------------------------------
-        |
-        | Define the Ledger implementation.
-        |
-        */
+    //     /*
+    //     |--------------------------------------------------------------------------
+    //     | Ledger Implementation
+    //     |--------------------------------------------------------------------------
+    //     |
+    //     | Define the Ledger implementation.
+    //     |
+    //     */
 
         'implementation' => Altek\Accountant\Models\Ledger::class,
 
-        /*
-        |--------------------------------------------------------------------------
-        | Ledger Threshold
-        |--------------------------------------------------------------------------
-        |
-        | Specify a cutoff for the number of Ledger records a model can have.
-        | Zero means unlimited.
-        |
-        */
+    //     /*
+    //     |--------------------------------------------------------------------------
+    //     | Ledger Threshold
+    //     |--------------------------------------------------------------------------
+    //     |
+    //     | Specify a cutoff for the number of Ledger records a model can have.
+    //     | Zero means unlimited.
+    //     |
+    //     */
 
-        'threshold' => 0,
+    //     'threshold' => 0,
 
-        /*
-        |--------------------------------------------------------------------------
-        | Ledger Driver
-        |--------------------------------------------------------------------------
-        |
-        | The default driver used to store Ledger records.
-        |
-        */
+    //     /*
+    //     |--------------------------------------------------------------------------
+    //     | Ledger Driver
+    //     |--------------------------------------------------------------------------
+    //     |
+    //     | The default driver used to store Ledger records.
+    //     |
+    //     */
 
-        'driver' => 'database',
-    ],
+    //     'driver' => 'database',
+    // ],
 
     /*
     |--------------------------------------------------------------------------
@@ -68,7 +68,7 @@ return [
     |
     */
 
-    'contexts' => Altek\Accountant\Context::WEB,
+    // 'contexts' => Altek\Accountant\Context::WEB,
 
     /*
     |--------------------------------------------------------------------------

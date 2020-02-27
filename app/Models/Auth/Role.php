@@ -10,7 +10,7 @@ use Spatie\Permission\Models\Role as SpatieRole;
 /**
  * Class Role.
  */
-class Role extends SpatieRole implements Recordable
+class Role extends SpatieRole
 {
     use RecordableTrait,
         RoleMethod;

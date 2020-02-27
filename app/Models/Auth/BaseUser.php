@@ -2,8 +2,6 @@
 
 namespace App\Models\Auth;
 
-use Altek\Accountant\Contracts\Recordable;
-use Altek\Accountant\Recordable as RecordableTrait;
 use Altek\Eventually\Eventually;
 use App\Models\Auth\Traits\SendUserPasswordReset;
 use App\Models\Traits\Uuid;
@@ -16,13 +14,12 @@ use Spatie\Permission\Traits\HasRoles;
 /**
  * Class User.
  */
-abstract class BaseUser extends Authenticatable implements Recordable
+abstract class BaseUser extends Authenticatable
 {
     use HasRoles,
         Eventually,
         Impersonate,
         Notifiable,
-        RecordableTrait,
         SendUserPasswordReset,
         SoftDeletes,
         Uuid;

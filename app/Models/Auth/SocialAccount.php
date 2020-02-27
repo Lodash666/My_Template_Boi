@@ -2,12 +2,10 @@
 
 namespace App\Models\Auth;
 
-use App\Models\RecordingModel;
-
 /**
  * Class SocialAccount.
  */
-class SocialAccount extends RecordingModel
+class SocialAccount 
 {
     /**
      * The database table used by the model.
